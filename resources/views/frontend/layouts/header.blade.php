@@ -81,7 +81,7 @@
                             <form method="POST" action="{{route('product.search')}}">
                                 @csrf
                                 <input name="search" placeholder="Search Products Here....." type="search">
-                                <button class="btnn" type="submit"><i class="ti-search"></i></button>
+                                <button class="btnn bg-primary btn-primary" type="submit"><i class="ti-search"></i></button>
                             </form>
                         </div>
                     </div>
@@ -178,17 +178,17 @@
         </div>
     </div>
     <!-- Header Inner -->
-    <div class="header-inner">
+    <div class="header-inner bg-primary">
         <div class="container">
-            <div class="cat-nav-head">
+            <div class="cat-nav-head ">
                 <div class="row">
                     <div class="col-lg-12 col-12">
                         <div class="menu-area">
                             <!-- Main Menu -->
-                            <nav class="navbar navbar-expand-lg">
+                            <nav class="navbar navbar-expand-lg ">
                                 <div class="navbar-collapse">	
                                     <div class="nav-inner">	
-                                        <ul class="nav main-menu menu navbar-nav">
+                                        <ul class="nav  main-menu menu navbar-nav">
                                             <li class="{{Request::path()=='home' ? 'active' : ''}}"><a href="{{route('home')}}">Home</a></li>
                                             <li class="{{Request::path()=='about-us' ? 'active' : ''}}"><a href="{{route('about-us')}}">About Us</a></li>
                                             <li class="@if(Request::path()=='product-grids'||Request::path()=='product-lists')  active  @endif"><a href="{{route('product-grids')}}">Products</a><span class="new">New</span></li>												
